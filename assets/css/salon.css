@@ -87,7 +87,7 @@ main {
 }
 header + section {
     /* background-color: pink; */
-    background-image: url('/Users/dazjanaejohnson/Desktop/Leon Noel Coding/class10-materials/Salon/makeup-brush-set.jpeg'); 
+    background-image: url('assets/css/makeup-brush-set.jpeg'); 
     background-size: 100% auto;
     background-repeat: no-repeat;
     border-bottom: 10px solid black;
