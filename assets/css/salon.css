@@ -87,7 +87,7 @@ main {
 }
 header + section {
     /* background-color: pink; */
-    background-image: url('assets/css/images/makeup-brush-set.jpeg'); 
+    background-image: url("images/makeup-brush-set.jpeg"); 
     background-size: 100% auto;
     background-repeat: no-repeat;
     border-bottom: 10px solid black;
