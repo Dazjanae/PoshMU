@@ -425,7 +425,7 @@ h3 {
     }
     header + section {
         /* background-color: pink; */
-        background-image: url('/Users/dazjanaejohnson/Desktop/Leon Noel Coding/class10-materials/Salon/makeup-brush-set.jpeg'); 
+        background-image: url("images/makeup-brush-set.jpeg"); 
         background-size: 100%;
         background-repeat: no-repeat;
         border-bottom: none;
@@ -609,7 +609,7 @@ h3 {
   }
   header + section {
       /* background-color: pink; */
-      background-image: url('/Users/dazjanaejohnson/Desktop/Leon Noel Coding/class10-materials/Salon/makeup-brush-set.jpeg'); 
+      background-image: url("images/makeup-brush-set.jpeg"); 
       background-size: 100%;
       background-repeat: no-repeat;
       border-bottom: none;
