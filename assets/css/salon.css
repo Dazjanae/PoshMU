@@ -89,7 +89,7 @@ main {
     height: 50vh;
 }
 header + section {
-    background-image: url("images/makeup-brush-set.jpeg"); 
+    background-image: url("assets/css/images/makeup-brush-set.jpeg"); 
     background-size: 135% auto;
     background-repeat: no-repeat;
     border-bottom: 10px solid black;
