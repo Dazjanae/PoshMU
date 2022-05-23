@@ -47,76 +47,72 @@ table {
 	border-spacing: 0;
 }
 * {
-    /* text-transform: uppercase; */
     box-sizing: border-box;
 }
-
 body {
+    display: flex;
+    flex-direction: column;
     background-color: hsla(341, 100%, 84%, 0.3);
 }
 header {
     background-color: black;
-    height: 50px;
+    height: 7vh;
 }
 nav > ul  {
-    display: inline-block;
-    margin: 20px 0 0 300px;
-}
-nav > img {
-    margin-left: 80px;
-    /* margin-bottom: 10px; */
-    height: 40px;
-    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 nav > ul > li {
-    float: left;
-    padding: 0 20px;
+    padding: 1em 1em;
     font-family: 'prata';
 }
 nav > ul > li a {
-    /* text-transform: uppercase; */
     text-decoration: none;
     color: white;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+nav > h3 {
+    color: white;
+    font-size: 2.75em;  
+}
 main {
-    clear: both;
-    margin: 0 0 0 100px;
-    padding: 83px 0;
-    padding-bottom: 250px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100vw;
+    height: 50vh;
 }
 header + section {
-    /* background-color: pink; */
     background-image: url("images/makeup-brush-set.jpeg"); 
-    background-size: 100% auto;
+    background-size: 135% auto;
     background-repeat: no-repeat;
     border-bottom: 10px solid black;
     border-right: 10px solid black;
     border-bottom-right-radius: 100%;
 }
-.onlinebooking {
-    margin-left: 100px;
-}
 h1 {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 200;
-    width: 45%;
+    width: 60%;
+    align-self: center;
     color: white;
     text-shadow: black 0px 0px 2px;
-    padding-bottom: 20px;
-    margin-right: 100px;
-    float: right;
+    margin: .8em 0 0 0;
 }
 main > a {
-    display: block;
     margin: 50px 100px 100px 100px;
     padding-top: 10px;
     color: black;
     background-color: white;
-    width: 150px;
-    height: 30px;
+    width: 9vw;
+    height: 5vh;
     text-align: center;
-    /* font-size: 18px; */
 }
 main > section {
     width: 250px;
@@ -125,10 +121,8 @@ main > section {
     color: white;
     border-radius: 30%;
     border: 3px solid pink;
-    float: right;
-    margin-right: 250px;
-    margin-bottom: 100px;
     z-index: 1;
+    align-self: flex-end;
 }
 main > section * {
     margin-left: 50px;
@@ -148,7 +142,7 @@ main > section > p {
     padding-bottom: 30px;
 }
 main > section > a {
-    margin-top: 4px;
+    margin-top: 2px;
     padding: 10px 0;
     background-color: white;
     color: black;
@@ -156,77 +150,68 @@ main > section > a {
     display: inline-block;
     text-align: center;
 }
-aside {
-    writing-mode: vertical;
-    color: white;
-    display: inline;
-}
 a {
     text-decoration: none;
 }
 .threecompany {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-self: center;
     background-color: pink;
     border: 10px solid black;
     border-top-left-radius: 40%;
     border-top-right-radius: 40%;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
-    clear: both;
+    
 }
-.threecompany > section {
-    float: left;
-    width: 18%;
-    margin: 50px 0 50px 140px;
-    display: inline-block;
+.proArtist,.qualityService,.beautyProduct {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 1.5em 0 1em 0;
 }
 .threecompany > section > img {
-    height: 20%;
+    height: 30%;
     width: 20%;
 }
 .threecompany h4 {
     font-size: 18px;
     font-weight: 650;
-    padding: 10px 0;
-}
-.momentum {
-    clear: both;
-    margin-top: 50px;
-    padding: 50px 0;
-    background-color: black;
-    color: pink;
-    /* display: block; */
-}
-.momentum > section * {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-    text-align: center;
+    padding: 1em 0;
 
 }
+.momentum {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    padding: 2em 0;
+    background-color: black;
+    color: pink;
+}
 .momentum > section {
-    padding: 50px 0;
-    display: inline-block;
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0 1em 0;
+    align-self: center;
+    width: 50vw;
 }
-.baddie {
-    float: left;
-}
-.momentum h4 {
-    /* text-align: center; */
+.momentum > section *{
+   margin-top: 2em;
 }
 .momentum h2 {
-    font-size: 32px;
-    width: 22%;
-    margin-left: 140px;
-}
-.momentum p {
-    width: 80%;
-    padding: 20px 0;
-    /* margin-left: 140px; */
-}
-.clearfix {
-    overflow: auto;
+    font-size: 2em;
+    width: 50%;
+    margin-left: 2em;
 }
 html, body {
     max-width: 100%;
@@ -234,53 +219,40 @@ html, body {
 }
 .vl {
     border-left: 6px dotted black;
-    height: 100px;
-    display: inline-block;
+    height: 8em;
   }
 .lookbook {
-    padding: 50px 0;
-    background-color: black;
-    color: pink;
-    clear: both;
+    padding: 2em 0;
+    background-color: pink;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 .momentum img {
-    height: 200px;
-    width: 200px;
+    height: 70%;
+    width: 70%;
     border-radius: 50%;
-    margin-left: 110px;
-}
-.lookbook h2,.contact h2 {
-    font-size: 32px;
-    width: 22%;
-    margin-left: 140px;
-}
-.lookbook {
-    background-color: pink;
 }
 .lookbook h2 {
     color: black;
 }
-.lookbook img {
-    width: 24%;
-    height: 500px;
+/* .lookbook img {
+    height: 100vh;
     vertical-align: middle;
-}
-.lookbook section {
-    margin-left: 40px;
-}
+} */
 .contact {
-    padding: 50px 0;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact h2 {
     color: pink;
 }
 .contact p {
     text-align: center;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    width: 45%;
+
 }
 a:hover {
     color: pink;
@@ -292,24 +264,19 @@ h1, h2, h3 {
     font-family: "Prata", serif;
 }
 h4 {
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: bolder;
 }
-nav > h3 {
-    color: white;
-    margin-left: 20px;
-    padding-top: 10px;
-    font-size: 35px;
-    display: inline-block;
-}
-h3 {
-    display: inline-block;
-    float: left;
+.momentum h2, .lookbook h2,.contact h2  {
+    font-size: 2em;
+    width: 50%;
+    margin-left: 2em;
+    align-self: flex-start;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 400px;
+    max-width: 50vw;
     position: relative;
     margin: auto;
   }
@@ -392,372 +359,125 @@ h3 {
       border-radius: 10%;
   }
 
-  @media (max-width: 420px) {
-      h1 {
-          margin-right: 2.50em;
-          /* margin-left: auto; */
-          text-align: center;
-          font-size: 2.5em;
-          font-weight: 200;
-          width: 100%;
-          color: white;
-          text-shadow: black 0px 0px 2px;
-          padding-bottom: 20px;
-      }
-      header,nav {
-          width: 100%;
-      }
-      h3 {
-          float: none;
-          font-size: 2.18em;
-      }
-       nav > ul  {
-        display: inline-block;
-        float: none;
-        width: 100%;
-        margin: .59em 0 0 3em;
-      }
-       nav > ul > li {
-        padding: 0 .625em;
-        font-family: 'prata';
-        margin-top: 15px;
-        font-size: .75em;
+  /* new media query*/
+  @media only screen and (min-width: 737px) and (max-width: 840px) {
+    nav > ul {
+        display: none;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    header {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav > h3 {
+        font-size: 1.5em;
     }
     header + section {
-        /* background-color: pink; */
-        background-image: url("images/makeup-brush-set.jpeg"); 
-        background-size: 100%;
-        background-repeat: no-repeat;
-        border-bottom: none;
-        border-right: none;
+        border-bottom: 0;
+        border-right: 0;
         border-bottom-right-radius: 0%;
-    }
-    main {
-        padding: 83px 0;
-        padding-bottom: 250px;
-        width: 100%;
-    }
-    main > a {
-        display: none;
-        /* font-size: 18px; */
-    }
-    main > section {
-        width: 250px;
-        height: 140px;
-        background-color: black;
-        color: white;
-        border-radius: 30%;
-        border: 3px solid pink;
-        margin-right: 180px;
-        margin-bottom: 20px
-    }
-    main > section * {
-        /* margin-left: 100px; */
-        font: bold 15px;
-    }
-    main > span {
-        color: white;
-    
-    }
-    main > section > span {
-        padding: 10px 5px 10px 0; 
-        display: block;
-    }
-    main > section > p {
-        font-size: 16px;
-        line-height: 2em;
-        padding-bottom: 10px;
-    }
-    main > section > a {
-        margin-top: 4px;
-        padding: 10px 0;
-        background-color: white;
-        color: black;
-        width: 150px;
-        display: inline-block;
-        text-align: center;
     }
     .threecompany {
-        background-color: pink;
-        border: 5px solid black;
-        border-top-left-radius: 0%;
-        border-top-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
     }
-    .threecompany > section {
-        width: 90%;
-        margin: 15px 0 10px 20px;
-        display: inline-block;
-        text-align: center;
+    nav > ul {
+        display: none;
     }
-    .threecompany > section > img {
-        height: 20%;
-        width: 20%;
+    main > section {
+        display: none;
     }
-    .threecompany h4 {
-        font-size: 18px;
-        font-weight: 650;
-        padding: 10px 0;
-    }
-    .momentum {
-        margin-top: 10px;
-        padding: 15px 0;
-        background-color: black;
-        color: pink;
-        /* display: block; */
-    }
-    .momentum > section * {
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-    .momentum > section {
-        padding: 30px 0;
-        display: block;
-        width: 100%;
-    }
-    .baddie {
-        float: none;
-    }
-    .momentum h4 {
-        /* text-align: center; */
-    }
-    .momentum h2 {
-        font-size: 32px;
-        width: 50%;
-        margin-left: 105px;
-    }
-    .momentum p {
-        width: 80%;
-        padding: 20px 0;
-        /* margin-left: 140px; */
-    }
-    .momentum img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        margin-left: 110px;
-    }
-    .lookbook h2,.contact h2 {
-        font-size: 32px;
-        width: 70%;
-        margin-left: 120px;
-    }
-    .lookbook {
-        background-color: pink;
-    }
-    .lookbook h2 {
-        color: black;
-    }
-    .lookbook img {
-        width: 24%;
-        height: 500px;
-        vertical-align: middle;
-    }
-    .lookbook section {
-        margin-left: 40px;
-    }
-    .contact {
-        padding: 50px 0 100px 0;
-    }
-    .contact h2 {
-        color: pink;
-    }
-    .contact p {
-        text-align: center;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-  }
 }
 
- /* new media query*/
 
-  @media (min-width: 421px) and (max-width: 840px) {
+
+
+  @media only screen and (min-width: 416px) and (max-width: 736px) {
+    header {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav > h3 {
+        font-size: 1.5em;
+    }
+    header + section {
+        border-bottom: 0;
+        border-right: 0;
+        border-bottom-right-radius: 0%;
+    }
+    .threecompany {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+    nav > ul {
+        display: none;
+    }
+    main > section {
+        display: none;
+    }
     h1 {
-        margin-right: 2.50em;
-        /* margin-left: auto; */
-        text-align: center;
-        font-size: 2.5em;
-        font-weight: 200;
-        width: 100%;
+        font-size: 2em;
+        width: 100vw;
+    }
+    .proArtist,.qualityService,.beautyProduct {
+        width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 415px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1 {
+          font-size: 1.8em;
+          color: whitesmoke;
+          width: 80vw;
+          text-align: center;
+    }
+    header, main > section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav > h3 {
         color: white;
-        text-shadow: black 0px 0px 2px;
-        padding-bottom: 20px;
-    }
-    header,nav {
+        font-size: 1.75em;  
         width: 100%;
     }
-    h3 {
-        float: none;
-        font-size: 2.18em;
+    header + section {
+        border-bottom: 0;
+        border-right: 0;
+        border-bottom-right-radius: 0%;
     }
-     nav > ul  {
-      display: inline-block;
-      float: none;
-      width: 100%;
-      margin: .59em 0 0 3em;
+    nav > ul {
+        display: none;
     }
-     nav > ul > li {
-      padding: 0 .625em;
-      font-family: 'prata';
-      margin-top: 15px;
-      font-size: .75em;
-  }
-  header + section {
-      /* background-color: pink; */
-      background-image: url("images/makeup-brush-set.jpeg"); 
-      background-size: 100%;
-      background-repeat: no-repeat;
-      border-bottom: none;
-      border-right: none;
-      border-bottom-right-radius: 0%;
-  }
-  main {
-      padding: 83px 0;
-      padding-bottom: 250px;
-      width: 100%;
-  }
-  main > a {
-      display: none;
-      /* font-size: 18px; */
-  }
-  main > section {
-      width: 250px;
-      height: 140px;
-      background-color: black;
-      color: white;
-      border-radius: 30%;
-      border: 3px solid pink;
-      margin-right: 180px;
-      margin-bottom: 20px
-  }
-  main > section * {
-      /* margin-left: 100px; */
-      font: bold 15px;
-  }
-  main > span {
-      color: white;
-  
-  }
-  main > section > span {
-      padding: 10px 5px 10px 0; 
-      display: block;
-  }
-  main > section > p {
-      font-size: 16px;
-      line-height: 2em;
-      padding-bottom: 10px;
-  }
-  main > section > a {
-      margin-top: 4px;
-      padding: 10px 0;
-      background-color: white;
-      color: black;
-      width: 150px;
-      display: inline-block;
-      text-align: center;
-  }
-  .threecompany {
-      background-color: pink;
-      border: 5px solid black;
-      border-top-left-radius: 20%;
-      border-top-right-radius: 20%;
-      border-bottom-left-radius: 20%;
-      border-bottom-right-radius: 20%;
-      margin-top: 10px;
-  }
-  .threecompany > section {
-      width: 25%;
-      margin: 15px 0 15px 50px;
-      display: inline-block;
-      text-align: center;
-  }
-  .threecompany > section > img {
-      height: 20%;
-      width: 20%;
-  }
-  .threecompany h4 {
-      font-size: 18px;
-      font-weight: 650;
-      padding: 10px 0;
-  }
-  .momentum {
-      margin-top: 10px;
-      padding: 15px 0;
-      background-color: black;
-      color: pink;
-      /* display: block; */
-      width: 100%;
-  }
-  .momentum > section * {
-      /* margin-left: auto;
-      margin-right: auto; */
-      padding-bottom: 10px;
-      text-align: center;
-  }
-  .momentum > section {
-      padding: 30px 0;
-      display: block;
-      width: 100%;
-  }
-  .baddie {
-      float: none;
-  }
-  .momentum h4 {
-      /* text-align: center; */
-  }
-  .momentum h2 {
-      font-size: 32px;
-      width: 50%;
-      margin-left: 105px;
-  }
-  .momentum p {
-      width: 50%;
-      padding: 20px 0;
-      /* margin-left: 140px; */
-  }
-  .momentum img {
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      display: inline;
-      margin-left: 19.5em;
-  }
-  .lookbook h2,.contact h2 {
-      font-size: 32px;
-      width: 70%;
-      margin-left: 120px;
-  }
-  .lookbook {
-      background-color: pink;
-  }
-  .lookbook h2 {
-      color: black;
-  }
-  .lookbook img {
-      width: 24%;
-      height: 500px;
-      vertical-align: middle;
-  }
-  .lookbook section {
-      margin-left: 40px;
-  }
-  .contact {
-      padding: 50px 0 100px 0;
-  }
-  .contact h2 {
-      color: pink;
-  }
-  .contact p {
-      text-align: center;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 50px;
+    main > section {
+        display: none;
+    }
+    .threecompany {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -4em;
+    }
+    .threecompany section {
+        width: 50vw;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 75vw;
+        position: relative;
+        margin: auto;
     }
   }
-  
