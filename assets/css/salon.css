@@ -49,6 +49,8 @@ table {
 * {
     box-sizing: border-box;
 }
+
+/*Structure..Skin...Content*/
 body {
     display: flex;
     flex-direction: column;
